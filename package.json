@@ -1,0 +1,23 @@
+{
+  "name": "Complex-systems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Bjorn Kouw (http://github.com/Bjornborgie)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "googleapis": "^39.2.0",
+    "local-reverse-geocoder": "^0.11.1",
+    "package.json": "^2.0.1"
+  }
+}

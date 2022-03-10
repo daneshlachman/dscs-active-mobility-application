@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Directions Service</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" /> 
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="map"></div>
+      <div id="sidebar">
+        <div>
+          <b>Start:</b><br />
+          <select id="start">
+            <option value="Amsterdam Centraal">Amstedam Centraal</option>
+            <option value="Amsterdam Muiderpoort">Amsterdam Muiderpoort</option>
+          </select>
+          <br /><br />
+          <b>Stopovers:</b> <br />
+          <select multiple id="Stopovers">
+            <option value="Dam square">Dam square</option>
+            <option value="Science park amsterdam">Science park amsterdam</option>
+            <option value="Amstel hotel">Amstel hotel</option>
+            <option value="Anne Frank huis">Anne Frank huis</option>
+            <option value="Albert Heijn de pijp">Albert Heijn de pijp</option>
+          </select>
+          <br /><br />
+          <b>End:</b><br />
+          <select id="end">
+            <option value="Roeterseiland UvA">Roeterseiland UvA</option>
+          </select><br />
+          <br />
+          <input type="submit" id="submit" value="Show route" />
+          <br /><br />
+          <input type="button" id="locationButton" value="Get location" />
+        </div>
+        <div id="directions-panel"></div>
+      </div>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0RpEvgnHbb9SW9lbLqT2N4PIT5Fot9gQ&callback=initMap&v=weekly&channel=2"
+      async
+    ></script>
+  </body>
+</html>
