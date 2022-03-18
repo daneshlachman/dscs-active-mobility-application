@@ -2,6 +2,10 @@ import express from "express";
 import ejs from "ejs";
 import fs  from 'fs';
 import readline from'readline';
+import { readFile } from 'fs/promises';
+import { createRequire } from "module";
+// const require = createRequire(import.meta.url);
+// const jsondataa = require("./Scraper.json");
 
 
 const app = express();
