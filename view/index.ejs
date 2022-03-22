@@ -17,9 +17,31 @@
             <option value="Amsterdam Centraal">Amsterdam Centraal</option>
             <option value="Amsterdam Science Park">Amsterdam Science Park</option>
             <option value="Roeterseiland UvA">Roeterseiland UvA</option>
-            <!-- <option value="Amsterdam Muiderpoort">Amsterdam Muiderpoort</option> -->
+            <option value="Amsterdam Muiderpoort">Amsterdam Muiderpoort</option>
           </select>
-          <!-- <br /><br /> -->
+          <input style='float: right;'type="checkbox" id="Architecture" name="architecture" value="Architecture">
+          <label style='float: right;'for="Architecture">Architecture</label>
+
+          <input style='float: right;'type="checkbox" id="Attractions" name="attractions" value="Attractions">
+          <label style='float: right;'for="Attractions">Attractions</label><br>
+          
+          <input style='float: right;'type="checkbox" id="Canal ring" name="canal ring" value="Canal ring">
+          <label style='float: right;'for="Canal ring">Canal ring</label>
+
+          <input style='float: right;'type="checkbox" id="Castles & gardens" name="castles & gardens" value="Castles & gardens">
+          <label style='float: right;'for="Castles & gardens">Castles & gardens</label><br><br />
+ 
+          <input style='float: right;'type="checkbox" id="City centre" name="city centre" value="City centre">
+          <label style='float: right;'for="City centre">City centre</label>
+
+          <input style='float: right;'type="checkbox" id="Historical" name="historical" value="Historical">
+          <label style='float: right;'for="Historical">Historical</label><br><br>
+
+          <input style='float: right;'type="checkbox" id="Monument" name="monument" value="Monument">
+          <label style='float: right;'for="Monument">Monument</label>
+
+          <input style='float: right;'type="checkbox" id="Waterland" name="waterland" value="Waterland">
+          <label style='float: right;'for="Waterland">New land</label>
           <!-- <b>Stopovers:</b> <br /> -->
           <!-- <select multiple id="Stopovers">
             <option value="Dam square">Dam square</option>
@@ -28,17 +50,19 @@
             <option value="Anne Frank huis">Anne Frank huis</option>
             <option value="Albert Heijn de pijp">Albert Heijn de pijp</option>
           </select> -->
-          <br /><br />
+          <!-- <br /><br /> -->
           <b>End:</b><br />
           <select id="end">
             <option value="Roeterseiland UvA">Roeterseiland UvA</option>
           </select><br />
+          <!-- <input type="text" id="end" name="fname"><br> -->
           <br />
-          <input type="submit" id="submit" value="Show route" />
-          <br /><br />
+          <input type="submit" id="submit" value="Show route" /><br> <br>
+          <input style='float: right;' type="button" id="showAllPlaces" value="Show All Iamsterdam Places" />
           <input type="button" id="locationButton" value="Get location" />
-          <br /><br />
-          <input type="button" id="showAllPlaces" value="Show All Iamsterdam Places" />
+          <div>
+          <!-- <br /><br /> -->
+          <!-- <input style='float: right;' type="button" id="showAllPlaces" value="Show All Iamsterdam Places" /> -->
         </div>
         <div id="directions-panel"></div>
       </div>
