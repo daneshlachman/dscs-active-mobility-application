@@ -3,10 +3,12 @@
   <head>
     <title>Directions Service</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css" /> 
-    <script src="js/index.js"></script>
   </head>
   <body>
-
+    <section class="overlay-closed1" id="overlay-closed" value ="notclicked">
+      <section class="overlay-closed2" id="overlay-closed" value ="notclicked">
+        </section>
+      </section>
     <div id="container">
       <div id="map"></div>
       <div id="sidebar">
@@ -42,20 +44,16 @@
 
           <input style='float: right;'type="checkbox" id="Waterland" name="waterland" value="Waterland">
           <label style='float: right;'for="Waterland">New land</label>
-          <!-- <b>Stopovers:</b> <br /> -->
-          <!-- <select multiple id="Stopovers">
-            <option value="Dam square">Dam square</option>
-            <option value="Science park amsterdam">Science park amsterdam</option>
-            <option value="Amstel hotel">Amstel hotel</option>
-            <option value="Anne Frank huis">Anne Frank huis</option>
-            <option value="Albert Heijn de pijp">Albert Heijn de pijp</option>
-          </select> -->
-          <!-- <br /><br /> -->
           <b>End:</b><br />
           <select id="end">
-            <option value="Roeterseiland UvA">Roeterseiland UvA</option>
+            <option value="Dam Square">Dam Square </option>
+            <option value="Rembrandtplein">Rembrandtplein</option>
+            <option value="Leidseplein">Leidseplein</option>
+            <option value="Museumplein">Museumplein</option>
+            <option value="Muntplein">Muntplein</option>
+            <option value="Amsterdam Centraal">Amsterdam Centraal</option>
+            <option value="Anne frank huis">Anne frank huis</option>
           </select><br />
-          <!-- <input type="text" id="end" name="fname"><br> -->
           <br />
           <input type="submit" id="submit" value="Show route" /><br> <br>
           <input style='float: right;' type="button" id="showAllPlaces" value="Show All Iamsterdam Places" />
@@ -64,14 +62,18 @@
           <!-- <br /><br /> -->
           <!-- <input style='float: right;' type="button" id="showAllPlaces" value="Show All Iamsterdam Places" /> -->
         </div>
+        <div id ="currentlocationlat" value = ""></div>
+        <div id ="currentlocationlong" value = ""></div>
         <div id="directions-panel"></div>
       </div>
     </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="js/index.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0RpEvgnHbb9SW9lbLqT2N4PIT5Fot9gQ&callback=initMap&v=weekly&channel=2"
       async
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/bigdatacloudapi/js-reverse-geocode-client@latest/bigdatacloud_reverse_geocode.min.js" type="text/javascript"></script>
   </body>
 </html>
